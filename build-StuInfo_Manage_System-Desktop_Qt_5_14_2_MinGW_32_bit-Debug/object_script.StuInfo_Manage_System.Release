@@ -1,0 +1,12 @@
+release/addstudent_window.o
+release/global.o
+release/main.o
+release/mainwindow.o
+release/manage_window.o
+release/student_window.o
+release/teacher_window.o
+release/moc_addstudent_window.o
+release/moc_mainwindow.o
+release/moc_manage_window.o
+release/moc_student_window.o
+release/moc_teacher_window.o

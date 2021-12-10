@@ -1,0 +1,12 @@
+debug/addstudent_window.o
+debug/global.o
+debug/main.o
+debug/mainwindow.o
+debug/manage_window.o
+debug/student_window.o
+debug/teacher_window.o
+debug/moc_addstudent_window.o
+debug/moc_mainwindow.o
+debug/moc_manage_window.o
+debug/moc_student_window.o
+debug/moc_teacher_window.o
