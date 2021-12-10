@@ -45,6 +45,7 @@ private:
 
     QChartView *chartView;
     QChart *chart;
+    QValueAxis *axisY;
     void CreateChart();
 
 signals:

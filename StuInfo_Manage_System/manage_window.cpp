@@ -50,10 +50,10 @@ void Manage_Window::reload_StudentList(){
     QSqlQuery query(db);
 
     auto *sender1 = qobject_cast<QObject *>(sender());
-    if(sender1->objectName() == "ASC")order_mode = true;
-    else if(sender1->objectName() == "DESC")order_mode = false;
-    if(order_mode)query.exec("select * from Student_ClassList order by Grades ASC");
-    else query.exec("select * from Student_ClassList order by Grades DESC");
+    if(sender1->objectName() == "ASC")order_mode = false;
+    else if(sender1->objectName() == "DESC")order_mode = true;
+    if(order_mode)query.exec("select * from Student_ClassList order by Grades DESC");
+    else query.exec("select * from Student_ClassList order by Grades ASC");
 
     total = 0;
     highest_score = -1;
@@ -83,11 +83,21 @@ void Manage_Window::reload_StudentList(){
             else if(grades_int > 70 && grades_int <= 80)distribution[7]++;
             else if(grades_int > 80 && grades_int <= 90)distribution[8]++;
             else distribution[9]++;
+            if(grades_int == highest_score){
+                QString temp1 = " | " + student_db;
+                highest_stu += temp1;
+            }
             if(grades_int > highest_score){
+                highest_stu = "";
                 highest_score = grades_int;
                 highest_stu = student_db;
             }
+            if(grades_int == lowest_score){
+                QString temp2 = " | " + student_db;
+                lowest_stu += temp2;
+            }
             if(grades_int < lowest_score){
+                lowest_stu = "";
                 lowest_score = grades_int;
                 lowest_stu = student_db;
             }
@@ -268,7 +278,7 @@ void Manage_Window::CreateChart() {
     axisX->setLabelsColor(QColor(0,0,0));
     axisX->setLabelsFont(QFont("Microsoft YaHei",7));
 
-    QValueAxis *axisY = new QValueAxis;
+    axisY = new QValueAxis;
     int max = 0;
     for(int i = 0; i < 10 ; i++){
         if(distribution[i] > max)max = distribution[i];
@@ -295,6 +305,14 @@ void Manage_Window::CreateChart() {
 
 void Manage_Window::reloadChart(){
     chart->removeAllSeries();
+    int max = 0;
+    for(int i = 0; i < 10 ; i++){
+        if(distribution[i] > max)max = distribution[i];
+    }
+    axisY->setRange(0,max);
+    axisY->setTitleText("人数");
+    axisY->setTickCount(max+1);
+    axisY->setLabelFormat("%d");
     QBarSet *set = new QBarSet("学生人数");
     *set << distribution[0] << distribution[1] << distribution[2] << distribution[3] << distribution[4]
          << distribution[5] << distribution[6] << distribution[7] << distribution[8] << distribution[9];
