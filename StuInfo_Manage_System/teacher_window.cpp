@@ -8,6 +8,7 @@ Teacher_Window::Teacher_Window(QWidget *parent, QWidget *top) :
 {
     //初始化
     ui->setupUi(this);
+    this->setWindowIcon(QIcon(":/icon/icon.png"));
     setWindowTitle("教师面板  |  用户：" + UserName_G);
     setupClassList();
     ui->manage_button->setObjectName("manage");

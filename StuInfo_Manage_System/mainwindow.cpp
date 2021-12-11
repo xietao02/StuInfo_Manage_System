@@ -8,6 +8,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
     //初始化
     ui->setupUi(this);
+    this->setWindowIcon(QIcon(":/icon/icon.png"));
     setWindowTitle("学生信息管理系统");
     ui->ID_Teacher->setChecked(true);
     ui->UserName_in->setPlaceholderText("由此输入用户名");

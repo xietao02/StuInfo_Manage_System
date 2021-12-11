@@ -6,6 +6,7 @@ Student_Window::Student_Window(QWidget *parent, QWidget *top) :
     ui(new Ui::Student_Window)
 {
     ui->setupUi(this);
+    this->setWindowIcon(QIcon(":/icon/icon.png"));
     setWindowTitle("学生面板  |  用户：" + UserName_G);
     ui->ASC_Order->setObjectName("ASC");
     ui->DESC_Order->setObjectName("DESC");

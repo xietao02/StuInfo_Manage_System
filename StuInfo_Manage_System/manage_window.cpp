@@ -6,6 +6,7 @@ Manage_Window::Manage_Window(QWidget *parent,QWidget *top,QString classname,QStr
     ui(new Ui::Manage_Window)
 {
     ui->setupUi(this);
+    this->setWindowIcon(QIcon(":/icon/icon.png"));
     setWindowTitle("课程管理面板  |  课程：" + classname + "   课程ID：" + classid);
     ui->ASC_Order->setObjectName("ASC");
     ui->DESC_Order->setObjectName("DESC");
@@ -51,7 +52,8 @@ void Manage_Window::reload_StudentList(){
 
     auto *sender1 = qobject_cast<QObject *>(sender());
     if(sender1->objectName() == "ASC")order_mode = false;
-    else if(sender1->objectName() == "DESC")order_mode = true;
+    else order_mode = true;
+
     if(order_mode)query.exec("select * from Student_ClassList order by Grades DESC");
     else query.exec("select * from Student_ClassList order by Grades ASC");
 
@@ -111,7 +113,6 @@ void Manage_Window::reload_StudentList(){
         }
     }
     ui->StudentList->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
-    ui->StudentList->verticalHeader()->setSectionResizeMode(QHeaderView::Stretch);
     if(total == 0)average_score = 0;
     else average_score /= total;
     reload_analysis();

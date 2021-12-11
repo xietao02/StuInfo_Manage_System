@@ -95,6 +95,7 @@ public:
         QFont font2;
         font2.setPointSize(10);
         StudentList->setFont(font2);
+        StudentList->horizontalHeader()->setDefaultSectionSize(137);
 
         verticalLayout_3->addWidget(StudentList);
 

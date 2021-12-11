@@ -45,7 +45,7 @@ public:
     {
         if (Student_Window->objectName().isEmpty())
             Student_Window->setObjectName(QString::fromUtf8("Student_Window"));
-        Student_Window->resize(558, 450);
+        Student_Window->resize(558, 451);
         gridLayout = new QGridLayout(Student_Window);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         verticalLayout = new QVBoxLayout();
@@ -83,6 +83,9 @@ public:
         ClassList->setHorizontalHeaderItem(3, __qtablewidgetitem3);
         ClassList->setObjectName(QString::fromUtf8("ClassList"));
         ClassList->setMinimumSize(QSize(450, 300));
+        ClassList->horizontalHeader()->setDefaultSectionSize(134);
+        ClassList->verticalHeader()->setMinimumSectionSize(25);
+        ClassList->verticalHeader()->setDefaultSectionSize(28);
 
         verticalLayout->addWidget(ClassList);
 

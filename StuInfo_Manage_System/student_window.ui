@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>558</width>
-    <height>450</height>
+    <height>451</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -39,6 +39,15 @@
          <height>300</height>
         </size>
        </property>
+       <attribute name="horizontalHeaderDefaultSectionSize">
+        <number>134</number>
+       </attribute>
+       <attribute name="verticalHeaderMinimumSectionSize">
+        <number>25</number>
+       </attribute>
+       <attribute name="verticalHeaderDefaultSectionSize">
+        <number>28</number>
+       </attribute>
        <column>
         <property name="text">
          <string>课程名</string>

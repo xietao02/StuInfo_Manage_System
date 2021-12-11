@@ -5,6 +5,7 @@ release/mainwindow.o
 release/manage_window.o
 release/student_window.o
 release/teacher_window.o
+release/qrc_setIcon.o
 release/moc_addstudent_window.o
 release/moc_mainwindow.o
 release/moc_manage_window.o

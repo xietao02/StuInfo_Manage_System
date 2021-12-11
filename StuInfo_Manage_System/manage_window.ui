@@ -68,6 +68,9 @@
          <pointsize>10</pointsize>
         </font>
        </property>
+       <attribute name="horizontalHeaderDefaultSectionSize">
+        <number>137</number>
+       </attribute>
        <column>
         <property name="text">
          <string>学生</string>

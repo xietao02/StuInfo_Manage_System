@@ -49,7 +49,7 @@ public:
     {
         if (Teacher_Window->objectName().isEmpty())
             Teacher_Window->setObjectName(QString::fromUtf8("Teacher_Window"));
-        Teacher_Window->resize(491, 410);
+        Teacher_Window->resize(537, 410);
         gridLayout = new QGridLayout(Teacher_Window);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         verticalLayout_2 = new QVBoxLayout();
@@ -87,7 +87,7 @@ public:
         font2.setPointSize(10);
         ClassList->setFont(font2);
         ClassList->horizontalHeader()->setMinimumSectionSize(15);
-        ClassList->horizontalHeader()->setDefaultSectionSize(127);
+        ClassList->horizontalHeader()->setDefaultSectionSize(124);
         ClassList->verticalHeader()->setDefaultSectionSize(25);
 
         verticalLayout_2->addWidget(ClassList);

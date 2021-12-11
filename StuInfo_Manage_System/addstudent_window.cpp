@@ -6,6 +6,7 @@ AddStudent_window::AddStudent_window(QWidget *parent, QWidget *top) :
     ui(new Ui::AddStudent_window)
 {
     ui->setupUi(this);
+    this->setWindowIcon(QIcon(":/icon/icon.png"));
     setWindowTitle("添加学生");
     ui->addList->setColumnWidth(0,100);
     ui->addList->setColumnWidth(1,80);
@@ -20,6 +21,7 @@ AddStudent_window::AddStudent_window(QWidget *parent, QWidget *top) :
     ui->affirm->setShortcut(Qt::Key_Enter);
 
     connect(ui->affirm,SIGNAL(clicked()),this,SLOT(add_student()));
+
     connect(ui->finish,SIGNAL(clicked()),this,SLOT(backTotop()));
 
 }

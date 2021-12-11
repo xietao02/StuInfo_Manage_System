@@ -278,7 +278,8 @@ Makefile: ../StuInfo_Manage_System/StuInfo_Manage_System.pro ../../../../QtCreat
 		../../../../QtCreator/5.14.2/mingw73_32/lib/Qt5Sql.prl \
 		../../../../QtCreator/5.14.2/mingw73_32/lib/Qt5Core.prl \
 		../../../../QtCreator/5.14.2/mingw73_32/lib/qtmain.prl \
-		../../../../QtCreator/5.14.2/mingw73_32/mkspecs/features/build_pass.prf
+		../../../../QtCreator/5.14.2/mingw73_32/mkspecs/features/build_pass.prf \
+		../StuInfo_Manage_System/setIcon.qrc
 	$(QMAKE) -o Makefile ..\StuInfo_Manage_System\StuInfo_Manage_System.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 ../../../../QtCreator/5.14.2/mingw73_32/mkspecs/features/spec_pre.prf:
 ../../../../QtCreator/5.14.2/mingw73_32/mkspecs/qdevice.pri:
@@ -489,6 +490,7 @@ Makefile: ../StuInfo_Manage_System/StuInfo_Manage_System.pro ../../../../QtCreat
 ../../../../QtCreator/5.14.2/mingw73_32/lib/Qt5Core.prl:
 ../../../../QtCreator/5.14.2/mingw73_32/lib/qtmain.prl:
 ../../../../QtCreator/5.14.2/mingw73_32/mkspecs/features/build_pass.prf:
+../StuInfo_Manage_System/setIcon.qrc:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ..\StuInfo_Manage_System\StuInfo_Manage_System.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 
