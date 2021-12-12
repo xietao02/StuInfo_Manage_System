@@ -90,7 +90,6 @@ void Manage_Window::reload_StudentList(){
                 highest_stu += temp1;
             }
             if(grades_int > highest_score){
-                highest_stu = "";
                 highest_score = grades_int;
                 highest_stu = student_db;
             }
@@ -99,7 +98,6 @@ void Manage_Window::reload_StudentList(){
                 lowest_stu += temp2;
             }
             if(grades_int < lowest_score){
-                lowest_stu = "";
                 lowest_score = grades_int;
                 lowest_stu = student_db;
             }

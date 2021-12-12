@@ -8,5 +8,6 @@ int main(int argc, char *argv[])
     MainWindow w;
     w.ins_db();
     w.show();
+
     return a.exec();
 }

@@ -73,6 +73,7 @@ void MainWindow::Signup_Button_clicked(){
         //注册新账号
         if(flag == true){
             query.exec("insert into TeacherList (UserName,Password) values ('" + Username_this + "','" + Password_this +"')");
+            QMessageBox::information(this, "提示", "注册成功");
         }
     }
     else if(ui->ID_Student->isChecked()){
@@ -85,7 +86,10 @@ void MainWindow::Signup_Button_clicked(){
                 QMessageBox::warning(this, "警告", "注册失败,账号已存在");
             }
         }
-        if(flag == true)query.exec("insert into StudentList (UserName,Password) values ('" + Username_this + "','" + Password_this +"')");
+        if(flag == true){
+            query.exec("insert into StudentList (UserName,Password) values ('" + Username_this + "','" + Password_this +"')");
+            QMessageBox::information(this, "提示", "注册成功");
+        }
     }
 }
 

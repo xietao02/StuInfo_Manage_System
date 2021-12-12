@@ -4299,12 +4299,11 @@ release/student_window.o: ../StuInfo_Manage_System/student_window.cpp ../StuInfo
 		../../../../QtCreator/5.14.2/mingw73_32/include/QtWidgets/qdesktopwidget.h \
 		../../../../QtCreator/5.14.2/mingw73_32/include/QtGui/qguiapplication.h \
 		../../../../QtCreator/5.14.2/mingw73_32/include/QtGui/qinputmethod.h \
-		../../../../QtCreator/5.14.2/mingw73_32/include/QtWidgets/QGridLayout \
-		../../../../QtCreator/5.14.2/mingw73_32/include/QtWidgets/qgridlayout.h \
+		../../../../QtCreator/5.14.2/mingw73_32/include/QtWidgets/QHBoxLayout \
+		../../../../QtCreator/5.14.2/mingw73_32/include/QtWidgets/qboxlayout.h \
 		../../../../QtCreator/5.14.2/mingw73_32/include/QtWidgets/qlayout.h \
 		../../../../QtCreator/5.14.2/mingw73_32/include/QtWidgets/qlayoutitem.h \
-		../../../../QtCreator/5.14.2/mingw73_32/include/QtWidgets/qboxlayout.h \
-		../../../../QtCreator/5.14.2/mingw73_32/include/QtWidgets/QHBoxLayout \
+		../../../../QtCreator/5.14.2/mingw73_32/include/QtWidgets/qgridlayout.h \
 		../../../../QtCreator/5.14.2/mingw73_32/include/QtWidgets/QHeaderView \
 		../../../../QtCreator/5.14.2/mingw73_32/include/QtWidgets/qheaderview.h \
 		../../../../QtCreator/5.14.2/mingw73_32/include/QtWidgets/qabstractitemview.h \
@@ -4333,6 +4332,14 @@ release/student_window.o: ../StuInfo_Manage_System/student_window.cpp ../StuInfo
 		../../../../QtCreator/5.14.2/mingw73_32/include/QtWidgets/QTableWidget \
 		../../../../QtCreator/5.14.2/mingw73_32/include/QtWidgets/qtablewidget.h \
 		../../../../QtCreator/5.14.2/mingw73_32/include/QtWidgets/qtableview.h \
+		../../../../QtCreator/5.14.2/mingw73_32/include/QtWidgets/QTextBrowser \
+		../../../../QtCreator/5.14.2/mingw73_32/include/QtWidgets/qtextbrowser.h \
+		../../../../QtCreator/5.14.2/mingw73_32/include/QtWidgets/qtextedit.h \
+		../../../../QtCreator/5.14.2/mingw73_32/include/QtGui/qtextdocument.h \
+		../../../../QtCreator/5.14.2/mingw73_32/include/QtGui/qtextoption.h \
+		../../../../QtCreator/5.14.2/mingw73_32/include/QtGui/qtextcursor.h \
+		../../../../QtCreator/5.14.2/mingw73_32/include/QtGui/qtextformat.h \
+		../../../../QtCreator/5.14.2/mingw73_32/include/QtGui/qpen.h \
 		../../../../QtCreator/5.14.2/mingw73_32/include/QtWidgets/QVBoxLayout
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\student_window.o ..\StuInfo_Manage_System\student_window.cpp
 
