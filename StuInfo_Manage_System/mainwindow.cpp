@@ -18,7 +18,8 @@ MainWindow::MainWindow(QWidget *parent)
 
     QLabel *info = new QLabel(this);
     info->setFrameStyle(QFrame::Panel | QFrame::Raised);
-    info->setText(tr("<a href=\"https://xietao.site/archives/managesystem\">关于</a>"));
+    info->setText(tr("<a href=\"https://xietao02.github.io/2021/12/10/%E5%9F%BA%E4%BA%8EQt%E7%9A%84%E5%AD%A6%E7%94%9F%E4%BF%A1%E6%81%AF%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/">关于</a>"));
+    
     info->setOpenExternalLinks(true);
     ui->statusbar->addPermanentWidget(info);
     statusBar()->setSizeGripEnabled(false);
