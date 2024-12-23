@@ -355,3 +355,14 @@ void exit_button_clicked();		//返回至上一界面
 # 具体实现
 
 **建议直接读相关函数的具体实现代码,需注意部分已注释，此处不在赘述。**
+
+
+# Star History
+
+<a href="https://star-history.com/#xietao02/StuInfo_Manage_System&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=xietao02/StuInfo_Manage_System&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=xietao02/StuInfo_Manage_System&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=xietao02/StuInfo_Manage_System&type=Date" />
+ </picture>
+</a>
